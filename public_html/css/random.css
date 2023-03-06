@@ -1,0 +1,159 @@
+.random
+{
+  width: 66%;
+  height: 230px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.random .carousel
+{
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth; 
+  height: 230px;
+}
+
+.carousel li
+{
+  display: inline-block; 
+  object-fit: cover;
+  user-select: none;
+  margin-left: 5px;
+  width: calc(100% / 5); 
+}
+.carousel li:first-child
+{
+  margin-left: 0px;
+}
+
+.r_item 
+{
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px; font-size: 10px;
+}
+
+.r_title
+{
+  font-size: 14px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+
+.r_price
+{
+  font-size: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.r_image 
+{
+  margin: auto;
+  display: block;
+  height: 120px;
+  width: 120px;
+}
+
+.r_btn 
+{
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 0px;
+  border:0px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #2183a2;
+}
+
+.ctrl-btn {
+  padding: 5px 5px;
+  min-width: 50px;
+  background: #fff;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 40%;
+  margin-top: -27.5px;
+}
+
+.ctrl-btn.prev {
+  left: 0;
+}
+
+.ctrl-btn.next {
+  right: 0;
+}
+
+.menu-random{
+  width: 66%;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: auto; 
+}
+
+.button-action {
+  background-color: #e7e7e7; /* Green */
+  border: none;
+  color: #000000;
+  /*padding: 10px 10px;*/
+  padding-top:1px;
+  padding-bottom:1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media(max-width: 1400px)
+{
+  .random
+  {
+    width: 66%; 
+  }
+  .carousel li
+  {
+    width: calc(100% / 5); 
+  }
+}
+
+@media(max-width: 1000px)
+{
+  .random
+  {
+    width: 80%; 
+  }
+  .carousel li
+  {
+    width: calc(100% / 4); 
+  }
+}
+
+@media(max-width: 750px)
+{
+  .random
+  {
+    width: 90%;
+  }
+  .carousel li
+  {
+    width: calc(100% / 2); 
+  }
+}
+

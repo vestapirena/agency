@@ -1,0 +1,125 @@
+.shop_title
+{
+  width: 66%;
+  height: 40px;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: auto;
+  font-size: 28px;
+}
+
+.shop
+{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  margin: auto;
+}
+
+.product
+{
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  float: left; 
+  margin: 25px;
+}
+
+.p_title
+{
+  font-size: 14px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: bold; 
+}
+
+.p_short
+{
+  font-size: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.p_price
+{
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.p_image 
+{
+  margin: auto;
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+
+.p_btn 
+{
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border:0px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #2183a2;
+}
+
+.menu-product{
+  width: 70%;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: auto; 
+}
+
+@media(max-width: 1400px)
+{
+  .shop
+  {
+    width: 80%; 
+  }
+  .product
+  {
+    width: 20%; padding: 15px;
+  }
+}
+
+@media(max-width: 1000px)
+{
+  .shop
+  {
+    width: 80%; 
+  }
+  .product
+  {
+    width: 40%;
+  }
+}
+
+@media(max-width: 750px)
+{
+  .shop
+  {
+    width: 60%; 
+  }
+  .product
+  {
+    width: 100%;
+
+  }
+}
+
+
+
+
+

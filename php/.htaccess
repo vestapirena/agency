@@ -1,0 +1,7 @@
+Header set Access-Control-Allow-Origin http://localhost
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^category/?$ controllers/CategoryController.php [NC,L]
+RewriteRule ^products/?$ controllers/ProductController.php [NC,L]
+RewriteRule ^products/([0-9]+)/?$ controllers/ProductController.php?id=$1 [NC,L]
+RewriteRule ^detail/([0-9]+)/?$ controllers/DetailController.php?id=$1 [NC,L]
+RewriteRule ^setlike/([0-9]+)/?$ controllers/LikeController.php?id=$1 [NC,L]

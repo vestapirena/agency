@@ -1,0 +1,139 @@
+[INFO][05-03-2023 19:48:19]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:19]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:19]: categorias 1
+[INFO][05-03-2023 19:48:19]: categorias 2
+[INFO][05-03-2023 19:48:19]: categorias 3
+[INFO][05-03-2023 19:48:19]: getCategory Consulta realizada con éxito.
+[INFO][05-03-2023 19:48:20]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:20]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:20]: getRandomProducts consulta realizada con éxito.
+[INFO][05-03-2023 19:48:21]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:21]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:21]: categorias 1
+[INFO][05-03-2023 19:48:21]: categorias 2
+[INFO][05-03-2023 19:48:21]: categorias 3
+[INFO][05-03-2023 19:48:21]: getCategory Consulta realizada con éxito.
+[INFO][05-03-2023 19:48:22]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:22]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:22]: getRandomProducts consulta realizada con éxito.
+[INFO][05-03-2023 19:48:27]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:27]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:27]: getProducBySubCategory consulta realizada con éxito.
+[INFO][05-03-2023 19:48:31]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:31]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:31]: getProducBySubCategory consulta realizada con éxito.
+[INFO][05-03-2023 19:48:41]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:41]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:41]: getProducBySubCategory consulta realizada con éxito.
+[INFO][05-03-2023 19:48:59]: Parámetros de conexión ok.
+[INFO][05-03-2023 19:48:59]: Conexión realizada con éxito.
+[INFO][05-03-2023 19:48:59]: getRandomProducts consulta realizada con éxito.
+[INFO][06-03-2023 16:16:46]: Parámetros de conexión ok.
+[ERROR][06-03-2023 16:16:46]: Error al realizar la conexión SQLSTATE[HY000] [1049] Unknown database 'agency'
+[INFO][06-03-2023 16:16:47]: Parámetros de conexión ok.
+[ERROR][06-03-2023 16:16:47]: Error al realizar la conexión SQLSTATE[HY000] [1049] Unknown database 'agency'
+[INFO][06-03-2023 16:41:35]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:41:35]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:41:35]: categorias 1
+[INFO][06-03-2023 16:41:35]: categorias 2
+[INFO][06-03-2023 16:41:35]: categorias 3
+[INFO][06-03-2023 16:41:35]: getCategory Consulta realizada con éxito.
+[INFO][06-03-2023 16:41:36]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:41:36]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:41:36]: getRandomProducts consulta realizada con éxito.
+[INFO][06-03-2023 16:42:14]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:42:14]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:42:14]: categorias 1
+[INFO][06-03-2023 16:42:14]: categorias 2
+[INFO][06-03-2023 16:42:14]: categorias 3
+[INFO][06-03-2023 16:42:14]: getCategory Consulta realizada con éxito.
+[INFO][06-03-2023 16:42:15]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:42:15]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:42:15]: getRandomProducts consulta realizada con éxito.
+[INFO][06-03-2023 16:42:20]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:42:20]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:42:20]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 16:45:04]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:45:04]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:45:04]: updateMetaDataProduct consulta realizada con éxito.
+[INFO][06-03-2023 16:45:04]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:45:04]: getDetailProduct consulta realizada con éxito.
+[INFO][06-03-2023 16:45:04]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:45:04]: getComment consulta realizada con éxito.
+[INFO][06-03-2023 16:52:48]: Parámetros de conexión ok.
+[INFO][06-03-2023 16:52:48]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:52:48]: updateMetaDataProduct consulta realizada con éxito.
+[INFO][06-03-2023 16:52:48]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:52:48]: getDetailProduct consulta realizada con éxito.
+[INFO][06-03-2023 16:52:48]: Conexión realizada con éxito.
+[INFO][06-03-2023 16:52:48]: getComment consulta realizada con éxito.
+[INFO][06-03-2023 17:00:49]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:00:49]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:00:49]: categorias 1
+[INFO][06-03-2023 17:00:49]: categorias 2
+[INFO][06-03-2023 17:00:49]: categorias 3
+[INFO][06-03-2023 17:00:49]: getCategory Consulta realizada con éxito.
+[INFO][06-03-2023 17:00:50]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:00:50]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:00:50]: getRandomProducts consulta realizada con éxito.
+[INFO][06-03-2023 17:00:58]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:00:58]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:00:58]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:01:03]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:01:03]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:01:03]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:01:17]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:01:17]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:01:17]: updateMetaDataProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:01:17]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:01:17]: getDetailProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:01:17]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:01:17]: getComment consulta realizada con éxito.
+[INFO][06-03-2023 17:02:44]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:02:44]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:02:44]: updateMetaDataProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:02:44]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:02:44]: getDetailProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:02:44]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:02:44]: getComment consulta realizada con éxito.
+[INFO][06-03-2023 17:05:21]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:05:21]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:05:21]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:06:50]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:06:50]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:06:50]: categorias 1
+[INFO][06-03-2023 17:06:50]: categorias 2
+[INFO][06-03-2023 17:06:50]: categorias 3
+[INFO][06-03-2023 17:06:50]: getCategory Consulta realizada con éxito.
+[INFO][06-03-2023 17:06:51]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:06:51]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:06:51]: getRandomProducts consulta realizada con éxito.
+[INFO][06-03-2023 17:06:55]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:06:55]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:06:55]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:07:29]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:07:29]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:07:29]: updateMetaDataProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:07:29]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:07:29]: getDetailProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:07:29]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:07:29]: getComment consulta realizada con éxito.
+[INFO][06-03-2023 17:07:42]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:07:42]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:07:42]: setLike consulta realizada con éxito.
+[INFO][06-03-2023 17:08:26]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:08:26]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:08:26]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:08:28]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:08:28]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:08:28]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:08:44]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:08:44]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:08:44]: getProducBySubCategory consulta realizada con éxito.
+[INFO][06-03-2023 17:09:05]: Parámetros de conexión ok.
+[INFO][06-03-2023 17:09:05]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:09:05]: updateMetaDataProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:09:05]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:09:05]: getDetailProduct consulta realizada con éxito.
+[INFO][06-03-2023 17:09:05]: Conexión realizada con éxito.
+[INFO][06-03-2023 17:09:05]: getComment consulta realizada con éxito.
