@@ -19,6 +19,11 @@
             <div class="content">
                 <h1 class="name" id="model">0000</h1>
                 <p class="info" id="specification">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <select onchange="percentage();" id="month">
+                  <option value="">Al contado</option>
+                  <option value="6">6 meses</option>
+                  <option value="12">12 meses</option>
+                </select><br>
                 <p class="price" id="price">0000</p>
                 <div class="btn-and-rating-box">
                   <button type="button" class="button" id="randomSpinner" onclick="setLike();">
@@ -31,6 +36,7 @@
       </div>
     </div>
     <input type="hidden" id="txtLike">
+    <input type="hidden" id="amount">
 
     <br>
     <div class="p_container" id="comments">

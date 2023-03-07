@@ -9,6 +9,7 @@ let getDetail = async (id) => {
         document.getElementById('model').innerHTML = response[0].model; 
         document.getElementById('specification').innerHTML = response[0].specification; 
         document.getElementById('price').innerHTML = response[0].price; 
+        document.getElementById('amount').value = response[0].total;        
         let elementos = response.comments;
         processComment(elementos);
       } else if(request.status === 403) {
@@ -49,12 +50,11 @@ let setLike = async () => {
   request.send();
 };
 
-processComment = (elements) => {
+let processComment = (elements) => {
   let html = ``;
   let rating =``;
   let count = 0;
   for(const key in elements) {
-    console.log('val ' + elements[key].comment );
     html += `<div class='comment'>
               <div class='p_name'>${elements[key].name}</div>
               <div class='p_comment'>${elements[key].comment}</div>
@@ -71,7 +71,6 @@ processComment = (elements) => {
 };
 
 let getScore = (score) => {
-  console.log('score ' + score);
   let html = ``;
   let count = 0;
   for (let i = 0; i < score; i++) {
@@ -93,10 +92,30 @@ let randomSpinner = () => {
   spinner.classList.toggle('button--loading');
 }
 
-getId = () => {
+let getId = () => {
   let id = sessionStorage.getItem('id');
   document.getElementById('txtLike').value=id;
   getDetail(id);
 }
+
+let back = () => {
+  window.location.href = "../";
+}
+
+let percentage = () => {
+  let month = document.getElementById('month').value;
+  let amount = document.getElementById('amount').value;
+  let percent = 10;
+  let res = (amount/100)*percent;
+  let interest = res * month;
+  let total = Number(amount) + Number(interest);
+  document.getElementById('price').innerHTML = formatNumbers(total); 
+
+}
+
+let formatNumbers = (num) => { 
+  return '$' + num.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+}
+
 
 getId();

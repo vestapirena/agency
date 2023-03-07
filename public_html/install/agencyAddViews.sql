@@ -1,0 +1,1 @@
+ALTER TABLE `cpu_product` ADD `views` SMALLINT NOT NULL AFTER `modification_date`; 

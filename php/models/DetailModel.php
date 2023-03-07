@@ -21,7 +21,7 @@ class DetailModel
   {
     try
     {
-      $query = "SELECT id_product, model, specification, CONCAT('$', FORMAT(price, 2)) AS price, image FROM cpu_product WHERE id_product = :id_product ";
+      $query = "SELECT id_product, model, specification, CONCAT('$', FORMAT(price, 2)) AS price, price AS total, image FROM cpu_product WHERE id_product = :id_product ";
       $conn = $this->_pdoConnection->openConnection();
       $stmt = $conn->prepare($query);
       $stmt->bindValue(':id_product', $id, PDO::PARAM_INT);
