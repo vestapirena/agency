@@ -44,7 +44,7 @@ class ProductModel
   {
     try
     {
-      $query = "SELECT id_product, LEFT(model, 18) as model, specification, CONCAT('$', FORMAT(price, 2)) AS price, image FROM cpu_product ORDER BY RAND() LIMIT 0, :limit ";
+      $query = "SELECT id_product, LEFT(model, 16) as model, specification, CONCAT('$', FORMAT(price, 2)) AS price, image FROM cpu_product ORDER BY RAND() LIMIT 0, :limit ";
       $conn = $this->_pdoConnection->openConnection();
       $stmt = $conn->prepare($query);
       $stmt->bindValue(':limit', $this->_outstanding, PDO::PARAM_INT);

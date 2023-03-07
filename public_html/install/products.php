@@ -23,6 +23,8 @@
     $stmt_subcategory = $db->prepare($subcategory_query);
     $stmt_subcategory->bindParam(':id_category', $id_category);
 
+    //Cantidad de productos a ingresar por subcategoria
+    $amountProducts = 9;
     //Insertar productos
     $product_insert_sql = "INSERT INTO cpu_product (id_product, id_subcategory, model, specification, price, image, registration_date, modification_date, views, likes) VALUES (NULL, :id_subcategory, :model, :specification, :price, :image, NOW(), NOW(), :views, :likes)";
     $product_insert = $db->prepare($product_insert_sql);
@@ -36,6 +38,10 @@
 
     //Cargar comentarios
     $commentsArr = getComments();
+    //Cargar nombres
+    $namesArr = getNames();
+    $countNames = count($namesArr);
+    $countNames--;
     //Insertar comentarios
     //variable ciclos por comentario
     $loop_comment=0;
@@ -66,46 +72,48 @@
         echo '&nbsp;&nbsp;Subcategoria '.$subcategoryName.'<br>';
         $phrase = '';
         $priceArr = array();
-        $imageArr = array();
-        if($categoryName=='Laptops')
-        {
-          $phrase = matchCategory($categoryName, $id_subcategory, $subcategoryName, 0, 9);
-          $priceArr[0] = 7000;
-          $priceArr[1] = 15000;
-          $imageArr[0] = 1;
-          $imageArr[1] = 10;
-        } 
-        else if ($categoryName=='Monitores')
-        {
-          $phrase = matchCategory($categoryName, $id_subcategory, $subcategoryName, 10, 19);
-          $priceArr[0] = 1800;
-          $priceArr[1] = 3200;
-          $imageArr[0] = 11;
-          $imageArr[1] = 20;
-        }
 
-        $model = $categoryName.' '.$subcategoryName;
-
-        foreach($phrase as $sentence)
+        $productArr = matchCategory($categoryName); 
+        $priceFirst = $productArr[0];
+        $priceValues = explode(',', $priceFirst); 
+        array_shift($productArr);
+        for ($j = 0; $j <= $amountProducts; $j++) 
         {
-          $specification = $sentence;
-          $price = rand($priceArr[0],$priceArr[1]);
-          $image = 'img/'.rand($imageArr[0],$imageArr[1]).'.png';
+          $model = $categoryName.' '.$subcategoryName.' - '.getModel();
+          $co = rand(5,10);
+          shuffle($productArr);
+          shuffle($productArr);
+          $product = array_slice($productArr, 1, $co);// error$$phrase[0];
+          $specification = implode(" ",$product);
+          $price = rand((int)$priceValues[0],(int)$priceValues[1]);
+          $image = 'img/'.$categoryName.'/'.rand(1,10).'.png';
           $views = rand(10,500);
           $likes = rand(10,300);
           $product_insert->execute();
           $lastInsertId = $db->lastInsertId(); 
-          echo '&nbsp;&nbsp;&nbsp;&nbsp;Id producto '.$lastInsertId.'<br>';
-          $loop_comment = rand(0,15);
-          for ($x = 0; $x <= $loop_comment; $x++) {
-            //$comment = substr($lorem_ipsum,0,rand(5,300)); //Cantidad minima y maxima de texto en comentario
-            shuffle($commentsArr);
-            $n = rand(0,16);
-            $phraseArr = array_slice($commentsArr, 0, $n);
+          echo '&nbsp;&nbsp;&nbsp;&nbsp;Id producto '.$lastInsertId.' Modelo '.$model.'<br>';
+          $loop_comment = rand(1,10);
+          for ($x = 0; $x <= $loop_comment; $x++) 
+          {
+            if($x % 2 == 0)
+            {
+              sort($commentsArr);
+              shuffle($commentsArr);
+            }
+            else
+            {
+              rsort($commentsArr);
+              shuffle($commentsArr);
+            }
+            
+            shuffle($namesArr);
+            $n = rand(2,6);
+            $phraseArr = array_slice($commentsArr, 1, $n);
             $comment = implode(" ",$phraseArr);
             $score = rand(1,5); //Cantidad minima y maxima de estrellas en calificacion
-            $name = $names[rand(0,13)];
+            $name = $namesArr[rand(0,$countNames)];
             $comment_insert->execute();
+            $comment='';
           } 
         }
       }
@@ -116,6 +124,17 @@
     die($e->getMessage());
   }
 
+  function matchCategory($file)
+  {
+    $category = array();
+    $data = file($file.'.txt');
+    foreach ($data as $value){
+      $category[] = $value;
+    }
+    return $category;
+  }
+
+  /*
   function matchCategory($categoryName, $id_subcategory, $subcategory, $begin, $end)
   {
     $characteristics = array();
@@ -132,20 +151,40 @@
       $back[] = $phrase;
     }
     return $back;
-  }
+  }*/
 
   function getComments()
   {
     $comments = array();
-    $back = array();
     $data = file('comments.txt');
-    $count = 0;
     foreach ($data as $value){
       $comments[] = $value;
-      $count++;
     }
     return $comments;
   }
+
+  function getModel()
+  {
+    $permitted_chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return substr(str_shuffle($permitted_chars), rand(4,9), rand(10,15));
+  }
+
+  function getNames()
+  {
+    $names = array();
+    $data = file('names.txt');
+    foreach ($data as $value){
+      $names[] = $value;
+    }
+    return $names;
+  }
+ 
+
+  // Output: 54esmdr0qf
+  
+  //echo substr(str_shuffle($permitted_chars), 0, 10);
+  
+
 
   echo 'Fin del proceso';
 

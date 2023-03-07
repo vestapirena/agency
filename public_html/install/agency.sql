@@ -44,7 +44,7 @@ CREATE TABLE `cpu_category` (
 INSERT INTO `cpu_category` (`id_category`, `category`) VALUES
 (1, 'Laptops'),
 (2, 'Monitores'),
-(3, 'Teclados');
+(3, 'Tablets');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,6 @@ CREATE TABLE `cpu_product` (
   `image` varchar(30) NOT NULL,
   `registration_date` datetime NOT NULL,
   `modification_date` datetime NOT NULL,
-  `views` smallint(6) NOT NULL,
   `likes` smallint(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -101,7 +100,13 @@ INSERT INTO `cpu_subcategory` (`id_subcategory`, `id_category`, `subcategory`) V
 (3, 1, 'Lenovo'),
 (4, 1, 'ASUS'),
 (5, 2, 'LG'),
-(6, 2, 'Samsung');
+(6, 2, 'Samsung'),
+(9, 2, 'ACER'),
+(10, 2, 'Q-TOUCH'),
+(11, 3, 'TECLAST'),
+(12, 3, 'GHIA'),
+(13, 3, 'VORAGO'),
+(14, 3, 'Xiaoxin');
 
 --
 -- Índices para tablas volcadas
@@ -160,7 +165,7 @@ ALTER TABLE `cpu_product`
 -- AUTO_INCREMENT de la tabla `cpu_subcategory`
 --
 ALTER TABLE `cpu_subcategory`
-  MODIFY `id_subcategory` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_subcategory` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Restricciones para tablas volcadas
